@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<OutputType>Library</OutputType>      
+    <TargetFramework>net9.0</TargetFramework>
+
+    <!-- NuGet Package Info -->
+    <PackageId>AZMHttpClient</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>SyedUsamaAli</Authors>
+    <Company>AZMDevelopment</Company>
+    <Description>Reusable HTTP client wrapper for microservices.</Description>
+    <PackageProjectUrl>https://your-link-if-any</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yourrepo</RepositoryUrl>
+    <PackageTags>AZMHTTPClient; MicrosericeHttpClient; HttpClient; CrowdFundingHttpClient</PackageTags>
+
+    <!-- Create package on build -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <!-- Added for IFormFile support -->
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
